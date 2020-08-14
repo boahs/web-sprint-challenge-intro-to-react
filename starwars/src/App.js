@@ -35,19 +35,8 @@ const App = () => {
       <h1 className="Header">Characters</h1>
 
       <p>
-        {data.map((characters) => {
-          return (
-            <Character
-              name={characters.name}
-              height={characters.height}
-              mass={characters.mass}
-              hairColor={characters.hair_color}
-              skinColor={characters.skin_color}
-              eyeColor={characters.eye_color}
-              birthYear={characters.birth_year}
-              gender={characters.gender}
-            />
-          );
+        {data.map((characters, index) => {
+          return <Character key={index} info={characters} />;
         })}
       </p>
     </div>
@@ -55,3 +44,16 @@ const App = () => {
 };
 
 export default App;
+
+// {data.map((characters, index) => {
+//   return (
+//     <Character key={index} info={characters}/>
+
+// name={characters.name}
+// height={characters.height}
+// mass={characters.mass}
+// hairColor={characters.hair_color}
+// skinColor={characters.skin_color}
+// eyeColor={characters.eye_color}
+// birthYear={characters.birth_year}
+// gender={characters.gender}
