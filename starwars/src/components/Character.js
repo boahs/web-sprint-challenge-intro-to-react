@@ -20,18 +20,46 @@ const Character = (props) => {
 
   const NameFont = styled.p`
     color: #d822e1;
+    &:hover {
+      background-color: #5f22e1;
+      border: 2px solid black;
+      border-radius: 5px;
+      font-weight: bold;
+      color: white;
+    }
   `;
 
   const HeightMassFont = styled.p`
     color: #5f22e1;
+    &:hover {
+      background-color: #d822e1;
+      border: 2px solid black;
+      border-radius: 5px;
+      font-weight: bold;
+      color: white;
+    }
   `;
 
   const SkinEyeColor = styled.p`
     color: #47687b;
+    &:hover {
+      background-color: #2276e1;
+      border: 2px solid black;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+    }
   `;
 
   const YearGenderColor = styled.p`
     color: #2276e1;
+    &:hover {
+      background-color: #47687b;
+      border: 2px solid black;
+      border-radius: 5px;
+      font-weight: bold;
+      color: white;
+    }
   `;
 
   return (
