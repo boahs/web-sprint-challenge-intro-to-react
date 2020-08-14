@@ -20,6 +20,7 @@ const Character = (props) => {
 
   const NameFont = styled.p`
     color: #d822e1;
+
     &:hover {
       background-color: #5f22e1;
       border: 2px solid black;

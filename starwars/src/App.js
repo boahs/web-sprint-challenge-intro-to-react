@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
 import Character from "./components/Character";
+import BASE_API from "./constants/index";
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -9,7 +10,7 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get("https://swapi.dev/api/people")
+      .get(`${BASE_API}`)
       .then((res) => {
         // console.log(res.data.results);
         const dataArr = res.data.results;
