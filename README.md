@@ -29,12 +29,20 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+   Some say react is a framework some say a library...the actual organization goes with a library so let's go with that. I'd personally call it a framework just so that's on the record! This is because how react controls the DOM with the virtualdom thus creating the entire flow of an application.
+
+That being said - I believe react is very intuitive because it removes the nightmares and complexity DOM changes. React being a component based library will allow us to create reusable chunks that are easy for others t o understand while keeping it very manageable.
 
 1. Describe component state.
 
+Our state will define a set of information. For example using useState will allow us to define a state variable and function. Our initial value we set as our state is what we'll be making changes to. Keeping this at the head of our tree will allow that data to pour down onto all other files (components).
+
 1. Describe props.
 
+Our props are the function arguements / parameters. I like to think of our props in our components as functions that return data to the DOM - these components being called / rendered again and again with our added props will do this! Our components will have an internal purpose to create those new values (props) we pass them.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+   A side effect is anything that affects something outside our scope of the function being used. We use the useEffect() hook to sync things up
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
